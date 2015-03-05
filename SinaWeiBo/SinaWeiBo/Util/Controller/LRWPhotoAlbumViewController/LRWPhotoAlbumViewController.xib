@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LRWPhotoAlbumViewController">
+            <connections>
+                <outlet property="_collectionView" destination="ahr-vf-JUN" id="Cme-BM-wcT"/>
+                <outlet property="_nextBtn" destination="HcH-Dd-Gqo" id="jdv-Ei-jlH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ahr-vf-JUN">
+                    <rect key="frame" x="0.0" y="44" width="375" height="579"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="b0G-aT-jmM">
+                        <size key="itemSize" width="123" height="100"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8x-Oz-RsN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="OeD-Bq-4ZL"/>
+                    </constraints>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="相册" id="Fal-QG-7Vm">
+                            <barButtonItem key="leftBarButtonItem" title="取消" style="plain" id="Zb2-K3-v59">
+                                <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="cancelBtnClick:" destination="-1" id="SEm-mp-Siw"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjY-IL-Uj4">
+                    <rect key="frame" x="0.0" y="539" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Xht-Gc-NJ8"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" id="Duh-2s-ho7">
+                            <button key="customView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j2R-Gf-orE">
+                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="预览">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem style="plain" id="Yec-TX-3Ei">
+                            <button key="customView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eY0-ef-URE">
+                                <rect key="frame" x="56" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="原图">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Csh-qg-GB4"/>
+                        <barButtonItem style="plain" id="ydL-Dv-g4E">
+                            <button key="customView" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HcH-Dd-Gqo">
+                                <rect key="frame" x="309" y="9.5" width="60" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="下一步">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextBtnClick:" destination="-1" eventType="touchUpInside" id="AN3-YK-ddI"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="D8x-Oz-RsN" secondAttribute="trailing" id="3Vr-i1-tb1"/>
+                <constraint firstAttribute="trailing" secondItem="ahr-vf-JUN" secondAttribute="trailing" id="LcB-tw-fuy"/>
+                <constraint firstItem="vjY-IL-Uj4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NeH-Na-kwS"/>
+                <constraint firstItem="D8x-Oz-RsN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TVE-L0-6ta"/>
+                <constraint firstAttribute="trailing" secondItem="vjY-IL-Uj4" secondAttribute="trailing" id="hzq-c7-Sqg"/>
+                <constraint firstItem="D8x-Oz-RsN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vYl-Mp-z6W"/>
+                <constraint firstItem="ahr-vf-JUN" firstAttribute="top" secondItem="D8x-Oz-RsN" secondAttribute="bottom" id="vkw-vI-iuL"/>
+                <constraint firstAttribute="bottom" secondItem="vjY-IL-Uj4" secondAttribute="bottom" id="wf5-if-4PZ"/>
+                <constraint firstItem="ahr-vf-JUN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yCD-HE-w0d"/>
+                <constraint firstItem="vjY-IL-Uj4" firstAttribute="top" secondItem="ahr-vf-JUN" secondAttribute="bottom" id="yYr-8Y-X8c"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="33.5" y="336"/>
+        </view>
+    </objects>
+</document>

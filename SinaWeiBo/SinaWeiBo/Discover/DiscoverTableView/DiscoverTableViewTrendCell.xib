@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DiscoverTableViewTrendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhx-i3-XDA">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="21.5"/>
+                        <state key="normal" title="#微博话题#">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mo-CN-Vvw">
+                        <rect key="frame" x="160" y="22" width="160" height="21.5"/>
+                        <state key="normal" title="#微博话题#">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0n7-F3-ZqN">
+                        <rect key="frame" x="160" y="0.0" width="160" height="21.5"/>
+                        <state key="normal" title="#微博话题#">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-oz-ZDX">
+                        <rect key="frame" x="0.0" y="22" width="160" height="21.5"/>
+                        <state key="normal" title="#微博话题#">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dhx-i3-XDA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0fx-dH-4SQ"/>
+                    <constraint firstItem="dhx-i3-XDA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4L3-BZ-zyI"/>
+                    <constraint firstAttribute="trailing" secondItem="6Mo-CN-Vvw" secondAttribute="trailing" id="6aL-88-II1"/>
+                    <constraint firstItem="MM8-oz-ZDX" firstAttribute="top" secondItem="dhx-i3-XDA" secondAttribute="bottom" id="IVz-VM-Cz7"/>
+                    <constraint firstItem="0n7-F3-ZqN" firstAttribute="width" secondItem="dhx-i3-XDA" secondAttribute="width" id="K2Y-fP-P0o"/>
+                    <constraint firstItem="6Mo-CN-Vvw" firstAttribute="top" secondItem="0n7-F3-ZqN" secondAttribute="bottom" id="Ko8-2Y-RUL"/>
+                    <constraint firstAttribute="bottom" secondItem="6Mo-CN-Vvw" secondAttribute="bottom" id="P3f-tB-zau"/>
+                    <constraint firstItem="0n7-F3-ZqN" firstAttribute="height" secondItem="6Mo-CN-Vvw" secondAttribute="height" id="a1V-hj-uWG"/>
+                    <constraint firstItem="0n7-F3-ZqN" firstAttribute="leading" secondItem="dhx-i3-XDA" secondAttribute="trailing" id="bL3-Eb-GQE"/>
+                    <constraint firstItem="6Mo-CN-Vvw" firstAttribute="leading" secondItem="MM8-oz-ZDX" secondAttribute="trailing" id="bYe-4d-R0m"/>
+                    <constraint firstItem="0n7-F3-ZqN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cWs-h6-sut"/>
+                    <constraint firstAttribute="trailing" secondItem="0n7-F3-ZqN" secondAttribute="trailing" id="dcT-12-Cuj"/>
+                    <constraint firstAttribute="bottom" secondItem="MM8-oz-ZDX" secondAttribute="bottom" id="gGz-JI-Uty"/>
+                    <constraint firstItem="MM8-oz-ZDX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lI9-aP-fgY"/>
+                    <constraint firstItem="dhx-i3-XDA" firstAttribute="height" secondItem="MM8-oz-ZDX" secondAttribute="height" id="nwQ-pj-TqA"/>
+                    <constraint firstItem="MM8-oz-ZDX" firstAttribute="width" secondItem="6Mo-CN-Vvw" secondAttribute="width" id="zeV-zH-hg9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="trendBtn2" destination="0n7-F3-ZqN" id="hKI-KH-6qj"/>
+                <outlet property="trendBtn3" destination="MM8-oz-ZDX" id="4Aq-Z9-9RC"/>
+                <outlet property="trendBtn4" destination="6Mo-CN-Vvw" id="Dls-iG-sdL"/>
+                <outlet property="trendbtn1" destination="dhx-i3-XDA" id="KMp-Ba-cLy"/>
+            </connections>
+            <point key="canvasLocation" x="145" y="307.5"/>
+        </tableViewCell>
+    </objects>
+</document>

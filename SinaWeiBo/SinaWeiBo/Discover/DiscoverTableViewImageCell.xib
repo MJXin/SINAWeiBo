@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="DiscoverTableViewImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlA-Xe-MFy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                    </scrollView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="72f-eG-JM1">
+                        <rect key="frame" x="271" y="62.5" width="39" height="37"/>
+                        <color key="currentPageIndicatorTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </pageControl>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="RlA-Xe-MFy" secondAttribute="trailing" id="JiB-dA-e05"/>
+                    <constraint firstAttribute="trailing" secondItem="72f-eG-JM1" secondAttribute="trailing" constant="10" id="LPs-Cf-6Ee"/>
+                    <constraint firstAttribute="bottom" secondItem="RlA-Xe-MFy" secondAttribute="bottom" id="SRh-It-Eg2"/>
+                    <constraint firstItem="RlA-Xe-MFy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Wpr-eP-a8L"/>
+                    <constraint firstItem="RlA-Xe-MFy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Yse-6g-zlk"/>
+                    <constraint firstAttribute="bottom" secondItem="72f-eG-JM1" secondAttribute="bottom" constant="-10" id="kvB-OE-ScB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgScroll" destination="RlA-Xe-MFy" id="PyD-mI-MyM"/>
+                <outlet property="page" destination="72f-eG-JM1" id="qNr-d2-5zn"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="293"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LRWWeiBoWebController">
+            <connections>
+                <outlet property="_leftarrowBtn" destination="6Sx-pn-kOf" id="Hss-ES-pd7"/>
+                <outlet property="_refreshBtn" destination="NVp-bE-zsJ" id="1Vt-mv-UEd"/>
+                <outlet property="_rightarrowBtn" destination="DH4-iR-oqa" id="hZT-Lt-tgO"/>
+                <outlet property="_webView" destination="JcQ-qI-Xi8" id="hmC-zH-p6F"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JcQ-qI-Xi8">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqc-o9-bWc">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ufq-8x-8Ig"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" id="UcC-Sd-dWv">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Sx-pn-kOf">
+                                <rect key="frame" x="16" y="7" width="28" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="toolbar_leftarrow.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="toolbar_leftarrow_highlighted.png"/>
+                                <connections>
+                                    <action selector="left:" destination="-1" eventType="touchUpInside" id="cgl-Ao-yKr"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem style="plain" id="Ymc-7u-G0b">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DH4-iR-oqa">
+                                <rect key="frame" x="54" y="7" width="28" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="toolbar_rightarrow.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="toolbar_rightarrow_highlighted.png"/>
+                                <connections>
+                                    <action selector="right:" destination="-1" eventType="touchUpInside" id="Mz4-u0-fxI"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="w3F-nu-mWN"/>
+                        <barButtonItem style="plain" id="OFn-8W-82A">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NVp-bE-zsJ">
+                                <rect key="frame" x="538" y="7" width="28" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="toolbar_refresh.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshOrCancel:" destination="-1" eventType="touchUpInside" id="Sol-hC-Ofz"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JcQ-qI-Xi8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EhV-Xe-dmV"/>
+                <constraint firstItem="JcQ-qI-Xi8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LlD-sQ-1b7"/>
+                <constraint firstAttribute="trailing" secondItem="Hqc-o9-bWc" secondAttribute="trailing" id="MNf-pl-gX9"/>
+                <constraint firstItem="Hqc-o9-bWc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="R1f-KV-prb"/>
+                <constraint firstItem="Hqc-o9-bWc" firstAttribute="top" secondItem="JcQ-qI-Xi8" secondAttribute="bottom" id="T7h-td-4wW"/>
+                <constraint firstAttribute="trailing" secondItem="JcQ-qI-Xi8" secondAttribute="trailing" id="qCu-bc-Crh"/>
+                <constraint firstAttribute="bottom" secondItem="Hqc-o9-bWc" secondAttribute="bottom" id="vHV-Si-PMJ"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="toolbar_leftarrow.png" width="28" height="28"/>
+        <image name="toolbar_leftarrow_highlighted.png" width="28" height="28"/>
+        <image name="toolbar_refresh.png" width="28" height="28"/>
+        <image name="toolbar_rightarrow.png" width="28" height="28"/>
+        <image name="toolbar_rightarrow_highlighted.png" width="28" height="28"/>
+    </resources>
+</document>

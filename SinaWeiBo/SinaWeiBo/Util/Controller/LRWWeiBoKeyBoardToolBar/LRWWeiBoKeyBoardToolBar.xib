@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Knk-2W-2jU" customClass="LRWWeiBoKeyBoardToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <items>
+                <barButtonItem style="plain" id="jVF-yW-Ol0">
+                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Msf-LW-dtQ">
+                        <rect key="frame" x="16" y="7" width="24" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="compose_mentionbutton_background.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" image="compose_mentionbutton_background_highlighted.png"/>
+                        <connections>
+                            <action selector="atBtnClick:" destination="Knk-2W-2jU" eventType="touchUpInside" id="bRx-Ng-Ese"/>
+                        </connections>
+                    </button>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="lPh-IN-Vp2"/>
+                <barButtonItem style="plain" id="H0a-MP-sxr">
+                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UHW-E8-aGl">
+                        <rect key="frame" x="145" y="7" width="24" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="compose_trendbutton_background.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" image="compose_trendbutton_background_highlighted.png"/>
+                        <connections>
+                            <action selector="topicBtnClick:" destination="Knk-2W-2jU" eventType="touchUpInside" id="tPp-u9-U3H"/>
+                        </connections>
+                    </button>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="BWL-ir-CIy"/>
+                <barButtonItem style="plain" id="XgQ-bE-5F2">
+                    <button key="customView" opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LXG-Kt-8aa">
+                        <rect key="frame" x="258" y="7" width="30" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="message_emotion_background.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" image="message_emotion_background_highlighted.png"/>
+                        <connections>
+                            <action selector="emojiBtnClick:" destination="Knk-2W-2jU" eventType="touchUpInside" id="96X-vb-qPg"/>
+                        </connections>
+                    </button>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="ijb-3j-IYO"/>
+                <barButtonItem style="plain" id="IHc-cQ-9qS">
+                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RVh-zu-Q1N">
+                        <rect key="frame" x="274" y="7" width="24" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="compose_toolbar_picture.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" image="compose_toolbar_picture_highlighted.png"/>
+                        <connections>
+                            <action selector="pictureBtnClick:" destination="Knk-2W-2jU" eventType="touchUpInside" id="ONl-jV-Vi0"/>
+                        </connections>
+                    </button>
+                </barButtonItem>
+            </items>
+            <point key="canvasLocation" x="363" y="207"/>
+        </toolbar>
+    </objects>
+    <resources>
+        <image name="compose_mentionbutton_background.png" width="24" height="24"/>
+        <image name="compose_mentionbutton_background_highlighted.png" width="24" height="24"/>
+        <image name="compose_toolbar_picture.png" width="24" height="24"/>
+        <image name="compose_toolbar_picture_highlighted.png" width="24" height="24"/>
+        <image name="compose_trendbutton_background.png" width="24" height="24"/>
+        <image name="compose_trendbutton_background_highlighted.png" width="24" height="24"/>
+        <image name="message_emotion_background.png" width="30" height="30"/>
+        <image name="message_emotion_background_highlighted.png" width="30" height="30"/>
+    </resources>
+</document>

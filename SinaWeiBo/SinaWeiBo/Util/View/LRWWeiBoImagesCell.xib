@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weibo_images_cell" rowHeight="137" id="KGk-i7-Jjw" customClass="LRWWeiBoImagesCell">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="suG-xf-ems">
+                        <rect key="frame" x="2" y="2" width="120" height="132.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQS-bs-ly0">
+                        <rect key="frame" x="124" y="2" width="121" height="132.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CU9-hG-Qee">
+                        <rect key="frame" x="246" y="2" width="120" height="132.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="suG-xf-ems" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="0XV-5w-QI5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CU9-hG-Qee" secondAttribute="trailing" constant="1" id="3wv-WS-x95"/>
+                    <constraint firstItem="WQS-bs-ly0" firstAttribute="leading" secondItem="suG-xf-ems" secondAttribute="trailing" constant="2" id="7zR-zl-yDc"/>
+                    <constraint firstItem="CU9-hG-Qee" firstAttribute="leading" secondItem="WQS-bs-ly0" secondAttribute="trailing" constant="2" id="8N5-Nn-Wl7"/>
+                    <constraint firstItem="WQS-bs-ly0" firstAttribute="height" secondItem="suG-xf-ems" secondAttribute="height" id="8R8-LJ-oM7"/>
+                    <constraint firstItem="WQS-bs-ly0" firstAttribute="width" secondItem="suG-xf-ems" secondAttribute="width" id="BC6-A0-HxO"/>
+                    <constraint firstItem="suG-xf-ems" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="DvA-n6-vtp"/>
+                    <constraint firstAttribute="trailing" secondItem="CU9-hG-Qee" secondAttribute="trailing" constant="2" id="Dy4-y0-Ehh"/>
+                    <constraint firstItem="WQS-bs-ly0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="GmX-F1-aJZ"/>
+                    <constraint firstAttribute="bottom" secondItem="CU9-hG-Qee" secondAttribute="bottom" constant="2" id="LBi-kZ-glb"/>
+                    <constraint firstItem="WQS-bs-ly0" firstAttribute="width" secondItem="CU9-hG-Qee" secondAttribute="width" id="Wck-nV-ik2"/>
+                    <constraint firstAttribute="bottom" secondItem="suG-xf-ems" secondAttribute="bottom" constant="2" id="aea-VN-zjw"/>
+                    <constraint firstItem="suG-xf-ems" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="1" id="hWD-4L-2Vk"/>
+                    <constraint firstItem="CU9-hG-Qee" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="jJK-kJ-f3v"/>
+                    <constraint firstItem="WQS-bs-ly0" firstAttribute="height" secondItem="CU9-hG-Qee" secondAttribute="height" id="jST-ON-5Yo"/>
+                    <constraint firstAttribute="bottom" secondItem="WQS-bs-ly0" secondAttribute="bottom" constant="2" id="mkN-Gw-8uB"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="hWD-4L-2Vk"/>
+                        <exclude reference="3wv-WS-x95"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.67450980390000004" green="0.69019607839999997" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="oneImage" destination="suG-xf-ems" id="NAb-M5-Os1"/>
+                <outlet property="threeImage" destination="CU9-hG-Qee" id="cSn-97-x8t"/>
+                <outlet property="twoImage" destination="WQS-bs-ly0" id="a9i-St-r8U"/>
+            </connections>
+            <point key="canvasLocation" x="24" y="-18.5"/>
+        </tableViewCell>
+    </objects>
+</document>
